@@ -10,6 +10,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Author
  Aoko Mercyline
  
+
+## Development server/S
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
  ## Set Up Installation
 * Ng new GitHub
 * Cd GitHub 
@@ -19,10 +24,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Linked up my vscode with master and pushed my work
 * Deployed Live link for the website
 
+## Live link to gitHub
+https://github.com/AokoMercyline/GitHub-search
 
-## Development server/S
+## Languages Used
+* HTML 
+* CSS
+* TYPESCRIPT
+* BOOTSTRAP
+* JAVASCRIPT
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Behavioural Driven Development
+
+* User is able to search user name and see.
+* user is able to search repositories and see them.
+
 
 ## Code scaffolding
 
@@ -44,6 +60,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Contact Information
+
+* Phone:0708434156
+* Social media,any platform:AokoMercyline
+
 ## Licence and Copyright 
 
-
+Mit LIcence 
+Copyright (c) 2020 Aoko Mercyline
