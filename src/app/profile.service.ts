@@ -3,6 +3,8 @@ import { User } from './user';
 import { HttpClient } from '@angular/common/http';
 import{ environment} from '../environments/environment';
 import{ promise} from 'protractor';
+import { Repo } from './repo';
+
 
 
 
@@ -13,11 +15,13 @@ import{ promise} from 'protractor';
 export class ProfileService {
 
   user:User;
+  repo:Repo;
   
 
   
   constructor(private http:HttpClient) { 
     this.user = new User( "","","",0,0);
+    this.repo = new Repo( "", "","",new Date());
 
   }
 
@@ -30,6 +34,7 @@ export class ProfileService {
        following: number,
 
     }
+
     let promise = new Promise((resolve, reject) => {
       let apiURL = 'https://api.github.com/users/' + UserName + '?access_token=' + environment.apiKey;
       this.http.get<ApiResponse>(apiURL)
@@ -46,4 +51,33 @@ export class ProfileService {
     });
     return promise;
   }
+  getRepo(UserName:string){
+    interface ApiResponse{
+      name:string,
+      description:string,
+      language:string,
+      created_at:Date
+     
+
+    }
+    let promise = new Promise((resolve, reject) => {
+      let apiURL = 'https://api.github.com/users/' + UserName + '/repos?access_token=' + environment.apiKey;
+      this.http.get<ApiResponse>(apiURL)
+        .toPromise()
+        .then(
+          res => { // Success
+            this.repo = res;
+            resolve();
+          },
+          (error)=>{
+            reject();
+          }
+        );
+    });
+    return promise;
+  
+
+
+  }
+  
 }

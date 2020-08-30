@@ -1,1 +1,19 @@
-<p>repo works!</p>
+<div *ngFor="let repos of repo">
+ <p>
+     {{repos.name}}
+ </p>
+ <p>
+     {{repos.description}}
+ </p>
+
+ <p>
+     {{repos.language}}
+ </p>
+ <p>
+     {{repos.created_at}}
+ </p>
+
+ <!-- <p>
+     {{repos.branches}}
+ </p> -->
+</div>
