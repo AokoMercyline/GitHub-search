@@ -9,8 +9,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Author
  Aoko Mercyline
+ 
+ ## Set Up Installation
+* Ng new GitHub
+* Cd GitHub 
+* Open with Vs code
+* Generated app files i.e navbar,repo,user and forms
+* Generated classes for repo and user
+* Linked up my vscode with master and pushed my work
+* Deployed Live link for the website
 
-## Development server
+
+## Development server/S
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -33,3 +43,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Licence and Copyright 
+
+
