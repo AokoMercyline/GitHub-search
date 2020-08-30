@@ -1,19 +1,29 @@
-<div *ngFor="let repos of repo">
- <p>
-     {{repos.name}}
- </p>
- <p>
-     {{repos.description}}
- </p>
 
- <p>
-     {{repos.language}}
- </p>
- <p>
-     {{repos.created_at}}
- </p>
-
- <!-- <p>
-     {{repos.branches}}
- </p> -->
+<div class="container">
+    <h2>GitHub Repositories</h2>
 </div>
+<div class="card">
+    <div *ngFor="let repos of repo">
+
+        <p>
+            {{repos.name}}
+        </p>
+        <p>
+            {{repos.description}}
+        </p>
+       
+        <p>
+            {{repos.language}}
+        </p>
+        <p>
+            {{repos.created_at}}
+        </p>
+       
+        <!-- <p>
+            {{repos.branches}}
+        </p> -->
+       </div>
+
+</div>
+
+

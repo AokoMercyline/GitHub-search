@@ -20,7 +20,7 @@ export class ProfileService {
 
   
   constructor(private http:HttpClient) { 
-    this.user = new User( "","","",0,0);
+    this.user = new User( "","","",0,0,0);
     this.repo = new Repo( "", "","",new Date());
 
   }
@@ -30,6 +30,7 @@ export class ProfileService {
       name:string,
        login:string,
        avatar_url:string,
+       public_repos:number,
        followers:number,
        following: number,
 
