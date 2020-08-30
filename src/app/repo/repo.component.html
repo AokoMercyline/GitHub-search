@@ -1,13 +1,14 @@
-
-<div class="container">
-    <h2>GitHub Repositories</h2>
+<!-- <app-form-search></app-form-search> -->
+<div>
+    <h2 class="text-center pt-4 ">GitHub Repositories</h2>
 </div>
-<div class="card">
-    <div *ngFor="let repos of repo">
+<div class="mt-3 ml-2 ">
+    <div class="card mt-3 w-50 " *ngFor="let repos of repo">
 
-        <p>
+        <p class="text-center pt-4">
             {{repos.name}}
         </p>
+        <hr>
         <p>
             {{repos.description}}
         </p>

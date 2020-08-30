@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
+import { FormSearchComponent } from './form-search/form-search.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     RepoComponent,
     UserComponent,
+    FormSearchComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
 
   providers: [],
