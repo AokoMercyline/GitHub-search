@@ -40,6 +40,7 @@ https://github.com/AokoMercyline/GitHub-search
 * user is able to search repositories and see them.
 
 
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

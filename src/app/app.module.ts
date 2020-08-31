@@ -9,7 +9,7 @@ import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { FormSearchComponent } from './form-search/form-search.component';
 import { FormsModule } from '@angular/forms';
-// import { FormRepoComponent } from './form-repo/form-repo.component';
+
 
 
 @NgModule({
@@ -18,8 +18,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     RepoComponent,
     UserComponent,
-    FormSearchComponent,
-    // FormRepoComponent
+    FormSearchComponent
+    
   
 
   ],
@@ -28,7 +28,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    // FormRepoComponent
+    
   ],
 
   providers: [],
