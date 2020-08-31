@@ -65,7 +65,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Phone:0708434156
 * Social media,any platform:AokoMercyline
 
-## Licence and Copyright 
+## License and Copyright 
 
-Mit LIcence 
-Copyright (c) 2020 Aoko Mercyline
+Licensed under[MITLicense](LICENSE)
