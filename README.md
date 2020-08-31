@@ -8,6 +8,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 ## Author
+
  Aoko Mercyline
  
 
@@ -16,6 +17,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
  ## Set Up Installation
+
 * Ng new GitHub
 * Cd GitHub 
 * Open with Vs code
@@ -25,9 +27,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * Deployed Live link for the website
 
 ## Live link to gitHub
+
 https://github.com/AokoMercyline/GitHub-search
 
 ## Languages Used
+
 * HTML-used for website structuring
 * CSS-used for styling
 * TYPESCRIPT-speeding up development experience by catching errors and providing fixes.
