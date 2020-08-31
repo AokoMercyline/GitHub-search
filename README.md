@@ -34,7 +34,7 @@ https://github.com/AokoMercyline/GitHub-search
 * BOOTSTRAP-Responsiveness
 * JAVASCRIPT-Executes function for the user and repo
 
-## Behavioural Driven Development
+## Behavioural Driven Development(BDD)
 
 * User is able to search user name and see.
 * user is able to search repositories and see them.
