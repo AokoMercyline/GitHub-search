@@ -1,3 +1,14 @@
 h2{
     color: green;
 }
+.para{
+    color: rgb(255, 81, 0);
+    font-size: 25px;
+}
+.container-fluid{
+    background-image: url(../../assets/github.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

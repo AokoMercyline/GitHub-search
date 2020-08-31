@@ -6,8 +6,8 @@
             <img style="border-radius: 50px;" src="{{user.avatar_url}}" alt="">
 
         </div>
-
-        <div class="col-md-6" style="margin-top: 70px;">
+    
+        <div class="col-md-6" style="margin-top: 50px;" > 
             <h2 style="margin-bottom: 20px; font-size: 50px; font-family:cursive;">Profile Information</h2>
             <p> <span>Name:</span>
                 {{user.name}}
@@ -44,7 +44,7 @@
             <div class="col-md-6" *ngFor="let repos of userrepos">
                 <div class="card mt-3">
 
-                    <p class="text-center pt-4">
+                    <p class="text-center pt-4 para">
                         {{repos.name}}
                     </p>
 
