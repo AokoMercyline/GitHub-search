@@ -1,0 +1,11 @@
+.form-control{
+    width:50vh;
+    padding-left: 20px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 2px;
+}
