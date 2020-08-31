@@ -1,34 +1,37 @@
 <!-- <app-form-repo></app-form-repo> -->
-<div>
-    <h2 class="text-center pt-4 ">GitHub Repositories</h2>
-</div>
-<div class="row">
-    <div class="mt-6 ml-2">
-        <div class="card mt-3 w-25 " *ngFor="let repos of repo['items']">
-    
-            <p class="text-center pt-4">
-                {{repos.name}}
-            </p>
-            <hr>
-            <p>
-                {{repos.description}}
-            </p>
-           
-            <p>
-                {{repos.language}}
-            </p>
-            <p>
-                {{repos.created_at}}
-            </p>
-           
-          
-           </div>
-    
+<div class="container">
+    <div class="card">
+        <div>
+            <h2 class="text-center pt-4 ">GitHub Repositories</h2>
+        </div>
+        <div class="row">
+            <div class="mt-6 ml-2">
+                <div class="card mt-3 w-25 " *ngFor="let repos of repo['items']">
+            
+                    <p class="text-center pt-4">
+                        {{repos.name}}
+                    </p>
+                    <hr>
+                    <p>
+                        {{repos.description}}
+                    </p>
+                   
+                    <p>
+                        {{repos.language}}
+                    </p>
+                    <p>
+                        {{repos.created_at}}
+                    </p>
+                   
+                  
+                   </div>
+            
+            </div>
+            
+        </div>
     </div>
     
-    
-   
-    
 </div>
+
 
 
