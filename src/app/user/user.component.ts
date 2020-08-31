@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
 import{ User} from '../user';
+import {Repo} from '../repo'
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -11,6 +13,8 @@ import{ User} from '../user';
 export class UserComponent implements OnInit {
  
   user:User;
+  userrepos:Repo
+  User = environment.apiKey;
 
   constructor(public profileService:ProfileService ) { }
 
@@ -23,10 +27,28 @@ export class UserComponent implements OnInit {
        console.log(error)
      }
     )
+
+
+    this.profileService.getUserRepos(UserName).then(
+      ( success)=>{
+        this.userrepos = this.profileService.userrepos;
+        console.log(this.userrepos);
+        console.log(UserName);
+        
+
+
+        
+      },
+      (error)=>{
+        console.log(error)
+      }
+     )
   }
+
 
   ngOnInit(): void {
     this.getUser("AokoMercyline");
+    
   }
 
 }

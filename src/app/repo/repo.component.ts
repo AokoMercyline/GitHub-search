@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Repo} from '../repo';
 import { ProfileService} from '../profile.service'
+import { User } from '../user';
+import { UserComponent } from '../user/user.component';
 
 
 @Component({
@@ -14,21 +16,25 @@ export class RepoComponent implements OnInit {
 
   constructor(public profileService:ProfileService ) { }
 
-  getRepo(UserName){
-    this.profileService.getRepo(UserName).then(
-     ( success)=>{
-       this.repo = this.profileService.repo;
-     },
-     (error)=>{
-       console.log(error)
-     }
-    )
+  getRepo(repo){
+    this.profileService.getRepo(repo)
+    .then(
+      ( success)=>{
+        this.repo = this.profileService.repos;
+        console.log(this.repo);
+        
+      },
+      (error)=>{
+        console.log(error)
+      }
+     )
   }
 
   
 
   ngOnInit(): void {
-    this.getRepo("AokoMercyline");
+    this.getRepo("Quotes");
+    
   }
 
 }

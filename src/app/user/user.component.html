@@ -10,7 +10,7 @@
         <div class="col-md-6" style="margin-top: 70px;">
             <h2 style="margin-bottom: 20px; font-size: 50px; font-family:cursive;">Profile Information</h2>
             <p> <span>Name:</span>
-                 {{user.name}}
+                {{user.name}}
             </p>
             <p *ngIf="user.login">
                 <span>UserName:</span>
@@ -34,4 +34,44 @@
 
         </div>
     </div>
+    <!-- <app-form-search></app-form-search> -->
+    <div>
+        <h2 class="text-center pt-4 ">GitHub Repositories</h2>
+    </div>
+    <div class="container">
+        
+            <div class="row">
+                <div class="col-md-6"  *ngFor="let repos of userrepos">
+                    <div class="card mt-3">
+
+                        <p class="text-center pt-4">
+                            {{repos.name}}
+                        </p>
+                        a
+                        <hr>
+                        <p>
+                            {{repos.description}}
+                        </p>
+        
+                        <p>
+                            {{repos.language}}
+                        </p>
+                        <p>
+                            {{repos.created_at}}
+                        </p>
+        
+                    </div>
+                </div>
+
+            </div>
+         
+
+        
+
+    </div>
+
+
+
+
+
 </div>

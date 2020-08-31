@@ -1,73 +1,9 @@
-// import { Injectable} from '@angular/core'
-// import { Http,Headers} from '@angular/http'
-// import 'rxjs/add/operator/map';
-
-
-// @Injectable()
-
-// export class ProfileService{
-
-//   private username:string; 
-//   private clientid = ""; 
-//   constructor(private http:Http){}
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { Injectable } from '@angular/core';
 import { User } from './user';
 import { HttpClient } from '@angular/common/http';
 import{ environment} from '../environments/environment';
 import{ promise} from 'protractor';
 import { Repo } from './repo';
-
 
 
 
@@ -78,13 +14,14 @@ import { Repo } from './repo';
 export class ProfileService {
 
   user:User;
-  repo:Repo;
+  userrepos:Repo;
+  repos
   
 
   
   constructor(private http:HttpClient) { 
     this.user = new User( "","","","",0,0,0);
-    this.repo = new Repo( "", "","",new Date());
+    this.userrepos = new Repo( "", "","",new Date());
 
   }
 
@@ -116,7 +53,7 @@ export class ProfileService {
     });
     return promise;
   }
-  getRepo(UserName:string){
+  getUserRepos(UserName:string){
     interface ApiResponse{
       name:string,
       description:string,
@@ -125,13 +62,14 @@ export class ProfileService {
      
 
     }
+    
     let promise = new Promise((resolve, reject) => {
       let apiURL = 'https://api.github.com/users/' + UserName + '/repos?access_token=' + environment.apiKey;
       this.http.get<ApiResponse>(apiURL)
         .toPromise()
         .then(
           res => { // Success
-            this.repo = res;
+            this.userrepos = res;
             resolve();
           },
           (error)=>{
@@ -142,7 +80,42 @@ export class ProfileService {
     return promise;
   
 
+  }
+
+  getRepo(repo){
+    interface ApiResponse{
+     
+     
+
+    }
+    
+    let promise = new Promise((resolve, reject) => {
+      let apiURL = 'https://api.github.com/search/repositories?q=' + repo + '&order=asc?access_token=' + environment.apiKey;
+      this.http.get<ApiResponse>(apiURL)
+        .toPromise()
+        .then(
+          res => { // Success
+            this.repos = res;
+            resolve();
+          },
+          (error)=>{
+            reject();
+          }
+        );
+    });
+    return promise;
+  
 
   }
-  
+ 
 }
+
+
+
+
+
+
+
+
+
+// 'https://api.github.com/search/repositories?q=' 
