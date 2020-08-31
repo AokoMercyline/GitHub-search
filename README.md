@@ -28,11 +28,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 https://github.com/AokoMercyline/GitHub-search
 
 ## Languages Used
-* HTML 
-* CSS
-* TYPESCRIPT
-* BOOTSTRAP
-* JAVASCRIPT
+* HTML-used for website structuring
+* CSS-used for styling
+* TYPESCRIPT-speeding up development experience by catching errors and providing fixes.
+* BOOTSTRAP-Responsiveness
+* JAVASCRIPT-Executes function for the user and repo
 
 ## Behavioural Driven Development
 
