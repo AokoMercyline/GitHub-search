@@ -1,3 +1,6 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lobster&family=Modak&display=swap"
+    rel="stylesheet">
 <app-form-search (emitSearch)="getUser($event)"></app-form-search>
 
 <div class="container-fluid" style="padding-top: 80px; padding-left: 50px;">
@@ -6,9 +9,11 @@
             <img style="border-radius: 50px;" src="{{user.avatar_url}}" alt="">
 
         </div>
-    
-        <div class="col-md-6" style="margin-top: 50px;" > 
-            <h2 style="margin-bottom: 20px; font-size: 50px; font-family:cursive;">Profile Information</h2>
+
+        <div class="col-md-6" style="margin-top: 50px; color: white; font-size: 25px;">
+            <h2 style="margin-bottom: 20px; font-size: 50px; font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Lobster', cursive;
+            font-family: 'Modak', cursive;; color: rgb(255, 81, 0);">Profile Information</h2>
             <p> <span>Name:</span>
                 {{user.name}}
             </p>
@@ -34,13 +39,14 @@
 
         </div>
     </div>
-  
-    <div>
-        <h2 class="text-center pt-4 ">GitHub Repositories</h2>
-    </div>
-    <div class="container">
 
-        <div class="row">
+    <div>
+        <h2 class="text-center pt-4  font-size:70px;">GitHub Repositories</h2>
+    </div>
+    <div class="container" style="text-align: center;">
+
+        <div class="row" style="font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Lobster', cursive;; font-size:20px;">
             <div class="col-md-6" *ngFor="let repos of userrepos">
                 <div class="card mt-3">
 
