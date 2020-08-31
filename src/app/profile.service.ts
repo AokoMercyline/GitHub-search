@@ -1,3 +1,66 @@
+// import { Injectable} from '@angular/core'
+// import { Http,Headers} from '@angular/http'
+// import 'rxjs/add/operator/map';
+
+
+// @Injectable()
+
+// export class ProfileService{
+
+//   private username:string; 
+//   private clientid = ""; 
+//   constructor(private http:Http){}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { Injectable } from '@angular/core';
 import { User } from './user';
 import { HttpClient } from '@angular/common/http';

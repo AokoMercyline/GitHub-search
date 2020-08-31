@@ -8,7 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserComponent } from './user/user.component';
 import { FormSearchComponent } from './form-search/form-search.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component'
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms'
     RepoComponent,
     UserComponent,
     FormSearchComponent,
+    ProfileComponent,
 
   ],
   imports: [
