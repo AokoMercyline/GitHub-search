@@ -11,20 +11,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
  Aoko Mercyline
  
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+ 
  ## Set Up Installation
 
 * Ng new GitHub
-* Cd GitHub 
+* Cd GitHub
+* Git clone
+ ** [click] https://github.com/AokoMercyline/GitHub-search
 * Open with Vs code
-* Generated app files i.e navbar,repo,user and forms
-* Generated classes for repo and user
-* Linked up my vscode with master and pushed my work
-* Deployed Live link for the website
+* Generate Environmemt file.
+
 
 ## Live link to gitHub
 
@@ -45,7 +41,11 @@ https://github.com/AokoMercyline/GitHub-search
 
 
 
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 ## Code scaffolding
+
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
