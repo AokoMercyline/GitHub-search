@@ -17,9 +17,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Ng new GitHub
 * Cd GitHub
 * Git clone
- **[click](https://github.com/AokoMercyline/GitHub-search)**to view repo
-* Open with Vs code
-* Generate Environmemt file.
+ [click](https://github.com/AokoMercyline/GitHub-search)to view repo
+* Open with Vs code.
+* Generate Environment file.
+* Code and then run ng-serve
 
 
 ## Live link to gitHub
